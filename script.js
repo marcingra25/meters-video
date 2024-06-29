@@ -9,7 +9,7 @@ document.getElementById('srtForm').addEventListener('submit', function(event) {
 
     for (let i = 0; i < total_seconds; i++) {
         let start_time = i;
-        let end_time = i + 1;
+        let end_time = i + 0.5;
         let start_time_str = `00:00:${start_time.toString().padStart(2, '0')},000`;
         let end_time_str = `00:00:${end_time.toString().padStart(2, '0')},000`;
         let current_distance = (speed * start_time).toFixed(2);
